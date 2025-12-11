@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Language Inventors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1><b>Programming Language Inventors</b></h1>
+
+    <div class="label-row">
+      <span class="subtitle">Select a programming language inventor:</span>
+      <select id="inventorSelect">
+        <option value="" disabled selected>-- Choose an inventor --</option>
+        <option value="python">Guido van Rossum (Python)</option>
+        <option value="java">James Gosling (Java)</option>
+        <option value="cpp">Bjarne Stroustrup (C++)</option>
+        <option value="c">Dennis Ritchie (C)</option>
+        <option value="javascript">Brendan Eich (JavaScript)</option>
+        <option value="ruby">Yukihiro "Matz" Matsumoto (Ruby)</option>
+        <option value="php">Rasmus Lerdorf (PHP)</option>
+        <option value="csharp">Anders Hejlsberg (C#)</option>
+        <option value="cobol">Grace Hopper (COBOL)</option>
+        <option value="lisp">John McCarthy (Lisp)</option>
+      </select>
+    </div>
+
+    <div class="content-row">
+      <div class="photo-wrapper">
+        <img id="inventorPhoto" src="https://via.placeholder.com/160" alt="Inventor Photo">
+      </div>
+
+      <div class="description-box">
+        <div class="inventor-name" id="inventorName"></div>
+        <div class="language-name" id="languageName"></div>
+        <div class="description-text" id="descriptionText">
+          Select an inventor from the dropdown above to see details here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
